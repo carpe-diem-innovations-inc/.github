@@ -9,10 +9,11 @@ complex analysis **reproducible and independently verifiable**. The lab puts mod
 to work wherever they raise the ceiling — automating the repetitive, hardening the fragile,
 and delivering work that stands up to scrutiny.
 
-### Latest public release
+### Public releases
 
 | Project | What it is |
 |---|---|
+| [doorman](https://github.com/carpe-diem-innovations-inc/doorman) | Your 2FA codes on your Windows desktop — a tray padlock, click a code to copy. TOTP is an open standard and your seeds are yours, so the generator is twenty lines of standard library; the parts that touch secrets are dependency-free and small enough to audit in full. Secrets stay in DPAPI on your machine and it makes no network connections at all. |
 | [election-records-forensics-2026](https://github.com/carpe-diem-innovations-inc/election-records-forensics-2026) | A reproducible verification kit for a July 2026 U.S. government document release — hash-anchored sources, byte-identical re-derivation in CI, tiered findings, adversarial review invited. The method is general; this release is the worked example. |
 
 More tooling is in development — this page grows as releases land.
