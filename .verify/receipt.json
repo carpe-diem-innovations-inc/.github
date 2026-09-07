@@ -3,61 +3,66 @@
   "repo": "carpe-diem-innovations-inc/.github",
   "visibility": "PUBLIC",
   "visibility_assumed": false,
-  "head": "4a75dce6e7f9640617cd10a54d81824499bcc192",
+  "head": "bcffb09701ea3a7a607b604765eba8f9ee3c94d9",
   "content_id": "240f6197b90b48d11b8edf633c3cde45678aed04da09bf7740813b519288bd61",
   "branch": "ci/dependabot-policy",
-  "verified_at": "2026-09-07T19:50:36.8027550-04:00",
+  "verified_at": "2026-09-07T19:52:53.7968156-04:00",
   "ran_on": "windows-26100.9168",
   "stages": {
     "works": {
+      "exit": 0,
       "status": "pass",
       "proved_on": "windows-26100.9168",
       "cmd": "python scripts/verify_profile.py",
       "timed_out": false,
-      "exit": 0,
       "evidence": "ok  https://assets.carpedieminnovationsinc.com/sig/admin.png\nok  carpe-diem-innovations-inc/doorman (public)\nok  carpe-diem-innovations-inc/election-records-forensics-2026 (public)\nchecked: 1 asset URL(s), 2 repository link(s)"
     },
     "safe": {
+      "status": "pass",
       "checks": [
         {
-          "hits": [],
+          "status": "pass",
           "name": "no_secrets",
-          "status": "pass"
+          "hits": []
         },
         {
-          "hits": [],
+          "status": "pass",
           "name": "no_estate_paths",
-          "status": "pass"
+          "hits": []
         },
         {
-          "hits": [],
+          "status": "pass",
           "name": "no_machine_names",
-          "status": "pass"
+          "hits": []
         },
         {
           "detail": "NOTICE reserves all rights",
-          "name": "licence_declared",
-          "status": "pass"
+          "status": "pass",
+          "name": "licence_declared"
         },
         {
           "dirty_files": 0,
-          "name": "tree_clean",
-          "status": "pass"
+          "status": "pass",
+          "name": "tree_clean"
         },
         {
           "detail": "README carries a verification section and the CI badge",
-          "name": "verification_documented",
-          "status": "pass"
+          "status": "pass",
+          "name": "verification_documented"
         }
       ],
-      "status": "pass",
       "proved_on": "windows-26100.9168"
     },
     "elsewhere": {
-      "reason": "no CI run recorded for 4a75dce6e7f9640617cd10a54d81824499bcc192",
-      "sha": "4a75dce6e7f9640617cd10a54d81824499bcc192",
-      "status": "pending",
-      "proved_on": null
+      "status": "pass",
+      "runs": [
+        {
+          "url": "https://github.com/carpe-diem-innovations-inc/.github/actions/runs/34171392502",
+          "workflow": "verify",
+          "conclusion": "success"
+        }
+      ],
+      "proved_on": "github-actions"
     }
   }
 }
