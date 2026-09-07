@@ -2,52 +2,57 @@
   "schema": "gatekeeper/0.1",
   "repo": "carpe-diem-innovations-inc/.github",
   "visibility": "PUBLIC",
-  "head": "930189748174b510ebe0807eba2ad6eca0d48010",
+  "head": "9c36ef137b2f5f4b4c7e4818f04a79cdab9d116b",
   "content_id": "5e2794706755fca568e4dc4315196e4e4f21ddf2a69ec69d17589a9271ce328d",
   "branch": "verify/scope",
-  "verified_at": "2026-09-07T16:11:30.6513574-04:00",
+  "verified_at": "2026-09-07T16:12:07.3272241-04:00",
   "box": "CRADLE",
   "stages": {
     "works": {
       "cmd": "python scripts/verify_profile.py",
       "status": "pass",
-      "exit": 0,
-      "evidence": "ok  https://assets.carpedieminnovationsinc.com/sig/admin.png\nok  carpe-diem-innovations-inc/doorman (public)\nok  carpe-diem-innovations-inc/election-records-forensics-2026 (public)\nchecked: 1 asset URL(s), 2 repository link(s)"
+      "evidence": "ok  https://assets.carpedieminnovationsinc.com/sig/admin.png\nok  carpe-diem-innovations-inc/doorman (public)\nok  carpe-diem-innovations-inc/election-records-forensics-2026 (public)\nchecked: 1 asset URL(s), 2 repository link(s)",
+      "exit": 0
     },
     "safe": {
       "checks": [
         {
-          "status": "pass",
+          "name": "no_secrets",
           "hits": [],
-          "name": "no_secrets"
+          "status": "pass"
         },
         {
-          "status": "pass",
+          "name": "no_estate_paths",
           "hits": [],
-          "name": "no_estate_paths"
+          "status": "pass"
         },
         {
-          "status": "pass",
           "name": "licence_declared",
-          "detail": "NOTICE reserves all rights"
+          "detail": "NOTICE reserves all rights",
+          "status": "pass"
         },
         {
-          "status": "pass",
           "name": "tree_clean",
-          "dirty_files": 0
+          "dirty_files": 0,
+          "status": "pass"
         },
         {
-          "status": "pass",
           "name": "verification_documented",
-          "detail": "README carries a verification section and the CI badge"
+          "detail": "README carries a verification section and the CI badge",
+          "status": "pass"
         }
       ],
       "status": "pass"
     },
     "elsewhere": {
-      "status": "pending",
-      "reason": "no CI run recorded for 930189748174b510ebe0807eba2ad6eca0d48010",
-      "sha": "930189748174b510ebe0807eba2ad6eca0d48010"
+      "runs": [
+        {
+          "url": "https://github.com/carpe-diem-innovations-inc/.github/actions/runs/34158466405",
+          "conclusion": "success",
+          "workflow": "verify"
+        }
+      ],
+      "status": "pass"
     }
   }
 }
