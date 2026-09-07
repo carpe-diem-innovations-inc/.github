@@ -1,0 +1,14 @@
+Copyright (c) 2026 Carpe Diem Innovations Inc. All rights reserved.
+
+This repository holds organisation-level GitHub configuration and the text of the
+organisation's front page. It is proprietary and NOT licensed for reuse,
+redistribution, or modification.
+
+Public visibility is a requirement: GitHub reads organisation profile content only
+from a public repository named `.github`. It does not grant any licence of any kind.
+
+This is deliberate rather than an omission. Project code is openly licensed where the
+project intends it — see each repository's own LICENSE. Organisation identity is not
+a project.
+
+All rights reserved.

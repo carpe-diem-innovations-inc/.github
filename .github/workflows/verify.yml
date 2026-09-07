@@ -1,0 +1,30 @@
+name: verify
+
+# Proves the organisation front page is intact, its embedded asset resolves, and every
+# repository it advertises is still public. Standard library only - no install step.
+#
+# A green run here is what lets a push reach the default branch - see .verify/config.json.
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    # This page advertises OTHER repositories. One of them being renamed or made private
+    # breaks the org front page without anything in THIS repo changing, so a push-only
+    # trigger would never catch it.
+    - cron: '31 6 * * 1'
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Profile page is intact and its links are live
+        run: python scripts/verify_profile.py

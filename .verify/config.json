@@ -1,0 +1,4 @@
+{
+  "_comment": "Verification scope for the .github organisation-profile repo. GitHub renders profile/README.md on the org front page, so 'works' proves that file is present and non-empty, the asset it embeds resolves, and every repository it advertises still exists and is still public. The public-repo check catches real drift: a linked repo that gets renamed or made private turns the org front page into dead links without anything in this repo changing. CI runs weekly for the same reason. See B:/runners/verify.ps1 and canon disclosure_and_verification.md 2.3.",
+  "works": "python scripts/verify_profile.py"
+}
