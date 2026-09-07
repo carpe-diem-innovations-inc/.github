@@ -1,0 +1,24 @@
+# Dependency policy for .github.
+#
+# Organisation profile. GitHub renders profile/README.md on the org front page; the
+# checker asserts it is intact and that every repository it advertises is still
+# public. Standard library only, no packages.
+
+version: 2
+
+updates:
+  # The workflow is this repository's only dependency, and it is a real one: an action runs
+  # with access to the repository, so an abandoned or compromised version matters. It is also
+  # the clean-runner evidence the verification story relies on, so it stays current.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "build(ci)"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "github-actions"
